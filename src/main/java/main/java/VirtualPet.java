@@ -27,7 +27,7 @@ public class VirtualPet {
 
 	}
 	
-	public String gePetName() {
+	public String getPetName() {
 		return petName;
 	}
 
