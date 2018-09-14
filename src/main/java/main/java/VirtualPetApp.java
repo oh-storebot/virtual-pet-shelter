@@ -33,7 +33,9 @@ public class VirtualPetApp {
 				}
 			}
 			if(menuOption.equals("2")) {
-				//code
+				for(VirtualPet pet : shelter.getPetsValues()) {
+					pet.waterPet();
+				}
 			}
 			if(menuOption.equals("3")) {
 				//code
