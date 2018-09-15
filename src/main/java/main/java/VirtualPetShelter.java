@@ -22,6 +22,11 @@ public class VirtualPetShelter {
 		
 	}
 	
+	public void petToAdopt() {
+		System.out.println("Which pet would you like to adopt?");
+		String petToAdopt = input.nextLine();
+		pets.remove(petToAdopt);
+	}
 	public HashMap<String, VirtualPet> getPetsMap() { //this is what is confusing me most
 		return pets;									//i probably won't use this since it just returns the hashMap
 	}

@@ -27,29 +27,33 @@ public class VirtualPetApp {
 			}
 			String menuOption = input.nextLine();
 
-			if(menuOption.equals("1")) {
-				for(VirtualPet pet : shelter.getPetsValues()) {
+			if (menuOption.equals("1")) {
+				for (VirtualPet pet : shelter.getPetsValues()) {
 					pet.feedPet();
 				}
 			}
-			if(menuOption.equals("2")) {
-				for(VirtualPet pet : shelter.getPetsValues()) {
+			if (menuOption.equals("2")) {
+				for (VirtualPet pet : shelter.getPetsValues()) {
 					pet.waterPet();
 				}
 			}
-			if(menuOption.equals("3")) {
-				//code
+			if (menuOption.equals("3")) {
+				System.out.println("Which pet would you like to play with?");
+
 			}
-			if(menuOption.equals("4")) {
-				//code
+			if (menuOption.equals("4")) {
+				shelter.petToAdopt();
 			}
+
 			if (menuOption.equals("5")) {
 				shelter.addNewPet();
 			}
-			if(menuOption.equals("6")) {
-				//code
+			if (menuOption.equals("6")) {
+				System.exit(0);
 			}
-
+			for(VirtualPet pet : shelter.getPetsValues()) {
+				pet.tick();
+			}
 			// shelter.addNewPet();
 			// shelter.addNewPet();
 			//
