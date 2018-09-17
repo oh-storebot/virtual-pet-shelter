@@ -39,9 +39,20 @@ public class VirtualPetApp {
 			}
 			if (menuOption.equals("3")) {
 				System.out.println("Which pet would you like to play with?");
+				for (VirtualPet pet : shelter.getPetsValues()) {
+
+					System.out.println(pet.getPetName());
+				}
+				String petName = input.nextLine();
+				shelter.getPet(petName).playPet();
 
 			}
 			if (menuOption.equals("4")) {
+				
+				for (VirtualPet pet : shelter.getPetsValues()) {
+
+					System.out.println(pet.getPetName());
+				}
 				shelter.petToAdopt();
 			}
 
