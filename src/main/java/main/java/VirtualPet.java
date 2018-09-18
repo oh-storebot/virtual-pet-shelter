@@ -6,9 +6,11 @@ public class VirtualPet {
 	private int thirstLevel;
 	private int boredomLevel;
 	private String petName;
+	private String petDescription;
 
-	public VirtualPet(String petName2, int hunger, int thirst, int boredom) {
+	public VirtualPet(String petName2, String petDescription2, int hunger, int thirst, int boredom) {
 		petName = petName2;
+		petDescription = petDescription2;
 		hungerLevel = hunger;
 		thirstLevel = thirst;
 		boredomLevel = boredom;
@@ -29,6 +31,10 @@ public class VirtualPet {
 	
 	public String getPetName() {
 		return petName;
+	}
+	
+	public String getPetDescription() {
+		return petDescription;
 	}
 
 	public void tick() {

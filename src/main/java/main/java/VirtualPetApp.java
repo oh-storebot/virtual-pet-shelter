@@ -41,17 +41,17 @@ public class VirtualPetApp {
 				System.out.println("Which pet would you like to play with?");
 				for (VirtualPet pet : shelter.getPetsValues()) {
 
-					System.out.println(pet.getPetName());
+					System.out.println(pet.getPetName() + " - " + pet.getPetDescription());
 				}
 				String petName = input.nextLine();
 				shelter.getPet(petName).playPet();
 
 			}
 			if (menuOption.equals("4")) {
-				
+
 				for (VirtualPet pet : shelter.getPetsValues()) {
 
-					System.out.println(pet.getPetName());
+					System.out.println(pet.getPetName() + " - " + pet.getPetDescription());
 				}
 				shelter.petToAdopt();
 			}
@@ -62,7 +62,7 @@ public class VirtualPetApp {
 			if (menuOption.equals("6")) {
 				System.exit(0);
 			}
-			for(VirtualPet pet : shelter.getPetsValues()) {
+			for (VirtualPet pet : shelter.getPetsValues()) {
 				pet.tick();
 			}
 			// shelter.addNewPet();
